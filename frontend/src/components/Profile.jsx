@@ -9,7 +9,7 @@ import { Label } from './ui/label'
 import AppliedJobTable from './AppiledJobTable'
 import UpdateProfileDialog from './UpdateProfileDialog'
 import { useSelector } from 'react-redux'
-import useGetAppliedJobs from '@/hooks/useGetAppliedJobs'
+import useGetAppliedJobs from '@/hooks/UseGetAppliedJobs'
 
 // const skills = ["Html", "Css", "Javascript", "Reactjs"]
 const isResume = true;
