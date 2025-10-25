@@ -18,15 +18,10 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'https://jobportal-6-0rk8.onrender.com',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin:'http://localhost:5173',
+    credentials:true
 }
-
 app.use(cors(corsOptions));
-
-
 
 const PORT =process.env.PORT || 3000;
 //api's
@@ -35,11 +30,9 @@ app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
-app.use(express.static(path.join(_dirname,"../frontend/dist")));
-app.get('/*splat', (_,res) => { 
-
-   res.sendFile(path.resolve(_dirname,"../frontend","dist","index.html"));
-
+app.use(express.static(path.join(_dirname,"/frontend/dist")));
+app.get('/*splat', (_,res)=>{
+    res.sendFile(path.resolve(_dirname,"frontend","dist","index.html"));
 });
 app.listen(PORT ,()=>{
     connectDB();
