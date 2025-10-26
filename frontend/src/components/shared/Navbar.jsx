@@ -17,18 +17,25 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const logoutHandler = async () => {
-        try {
-            const res = await axios.get(`${USER_API_END_POINT}/logout`, { withCredentials: true });
-            if (res.data.success) {
-                dispatch(setUser(null));
-                navigate("/");
-                toast.success(res.data.message);
-            }
-        } catch (error) {
-            console.log(error);
-            toast.error(error.response.data.message);
+    try {
+        const res = await axios.get(`${USER_API_END_POINT}/logout`, { withCredentials: true });
+        if (res.data.success) {
+            dispatch(setUser(null));
+            navigate("/");
+            toast.success(res.data.message);
         }
+    } catch (error) {
+        console.log(error);
+        let message = "Logout failed";
+        if (error.response && error.response.data && error.response.data.message) {
+            message = error.response.data.message;
+        } else if (error.message) {
+            message = error.message;
+        }
+        toast.error(message);
     }
+}
+
     return (
         <div className='bg-white'>
             <div className='flex items-center justify-between mx-auto max-w-7xl h-16'>
