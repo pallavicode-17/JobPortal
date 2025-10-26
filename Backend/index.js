@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://jobportal-6-0rk8.onrender.com",        // Use your Render frontend domain!
+    // Use your Render frontend domain!
   "https://pallavicode-17.github.io"              // If you serve from GitHub Pages (without /JobPortal/)
 ];
 const corsOptions = {
