@@ -17,24 +17,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://jobportal-frontend.onrender.com' // your actual frontend Render URL
-];
-
 const corsOptions = {
-  origin: function (origin, callback) {
-    console.log('CORS request from:', origin);
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-};
+    origin:'http://localhost:5173',
+    credentials:true
+}
 app.use(cors(corsOptions));
-
 
 const PORT =process.env.PORT || 3000;
 //api's
