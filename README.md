@@ -46,6 +46,7 @@ __Tech Stack__
 Authentication: JWT, Bcrypt
 
 File Uploads: Multer, Cloudinary (optional)
+https://pallavicode-17.github.io/JobPortal/
 
 <img width="1893" height="929" alt="Screenshot 2025-11-03 153719" src="https://github.com/user-attachments/assets/ed5a5420-b91c-49b7-8a84-0cc0584329db" />
 <img width="1913" height="940" alt="Screenshot 2025-11-03 153731" src="https://github.com/user-attachments/assets/81e4c76e-46ce-4bbd-b026-d6e978442c08" />
