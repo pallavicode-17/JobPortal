@@ -1,5 +1,5 @@
 __Job Portal App__
---A fullstack Job Portal application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This platform connects job seekers and recruiters, enabling users to browse and apply for jobs, post new vacancies, and manage applications with a seamless user experience.
+- A fullstack Job Portal application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This platform connects job seekers and recruiters, enabling users to browse and apply for jobs, post new vacancies, and manage applications with a seamless user experience.
 
 __Table of Contents__
 --Features
