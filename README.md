@@ -41,16 +41,13 @@ __Tech Stack__
 
 - Backend: Node.js, Express.js
 
-<img width="1893" height="929" alt="Screenshot 2025-11-03 153719" src="https://github.com/user-attachments/assets/ed5a5420-b91c-49b7-8a84-0cc0584329db" />
-<img width="1913" height="940" alt="Screenshot 2025-11-03 153731" src="https://github.com/user-attachments/assets/81e4c76e-46ce-4bbd-b026-d6e978442c08" />
-<img width="1893" height="923" alt="Screenshot 2025-11-03 153743" src="https://github.com/user-attachments/assets/3b40ed39-5b99-4b9c-8bb5-12d3b5cfe7e0" />
-
-
-
-
 - Database: MongoDB (local or Atlas)
 
 Authentication: JWT, Bcrypt
 
 File Uploads: Multer, Cloudinary (optional)
+
+<img width="1893" height="929" alt="Screenshot 2025-11-03 153719" src="https://github.com/user-attachments/assets/ed5a5420-b91c-49b7-8a84-0cc0584329db" />
+<img width="1913" height="940" alt="Screenshot 2025-11-03 153731" src="https://github.com/user-attachments/assets/81e4c76e-46ce-4bbd-b026-d6e978442c08" />
+<img width="1893" height="923" alt="Screenshot 2025-11-03 153743" src="https://github.com/user-attachments/assets/3b40ed39-5b99-4b9c-8bb5-12d3b5cfe7e0" />
 
